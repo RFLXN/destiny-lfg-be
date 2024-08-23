@@ -135,3 +135,9 @@ dist
 
 # Mac files
 DS_Store
+
+# Prisma ORM temp files
+prisma/migrations
+
+# Types for tRPC client
+lib/
