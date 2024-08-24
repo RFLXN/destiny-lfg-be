@@ -1,10 +1,15 @@
 {
-  "name": "lfg-server",
+  "name": "@rflxn/destiny-lfg-be",
   "version": "1.0.0",
+  "repository": "https://github.com/RFLXN/destiny-lfg-be",
   "main": "./dist/main.js",
   "types": "./lib/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "@trpc/server": "^11.0.0-rc.485"
+    "@trpc/server": "^11.0.0-rc.485",
+    "zod": "^3.23.8"
   }
 }
