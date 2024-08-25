@@ -1,6 +1,7 @@
 import { router } from "@/app";
 import { createLFG, deleteLFG, getLFGs, updateLFG } from "@/feature/lfg/service";
 import { alterLFG, joinLFG, leaveLFG } from "@/feature/lfg/member/service";
+import { ping } from "@/feature/ping";
 
 const member = router({
     join: joinLFG,
@@ -17,7 +18,8 @@ const lfg = router({
 });
 
 export const appRouter = router({
-    lfg
+    lfg,
+    ping
 });
 
 export type AppRouter = typeof appRouter;
