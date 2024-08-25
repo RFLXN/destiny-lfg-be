@@ -1,9 +1,9 @@
 model User {
-    id         BigInt             @id
-    bungieId   BigInt?            @unique
-    createdLFG LFG[]
-    joinedLFG  LFGJoinedMember[]
-    alteredLFG LFGAlteredMember[]
+    id          BigInt             @id
+    bungieId    BigInt?            @unique
+    createdLFGs LFG[]
+    joinedLFGs  LFGJoinedMember[]
+    alteredLFGs LFGAlteredMember[]
 
     @@index([bungieId], type: BTree)
 }

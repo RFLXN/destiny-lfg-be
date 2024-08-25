@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { LFGParticipateOptionSchema } from "@/feature/lfg/member/model";
 
 export const GuildIdInputSchema = z.object({ guildId: z.string() });
 
@@ -16,7 +17,7 @@ export const CreateLFGOptionsSchema = z.object({
     description: z.string(),
     guildId: z.string(),
     activityId: z.number(),
-    when: z.date(),
+    when: z.number(),
     creatorId: z.string()
 });
 
@@ -30,13 +31,30 @@ export interface LFG extends CreateLFGOptions {
     updatedAt: Date;
 }
 
+export interface LFGWithUsers extends LFG {
+    joinedMembers: { discordId: string; bungieId?: string }[];
+    alteredMembers: { discordId: string; bungieId?: string }[];
+}
+
 export const LFGSchema = CreateLFGOptionsSchema.extend({
     id: z.number(),
-    createdAt: z.date(),
-    updatedAt: z.date()
+    createdAt: z.number(),
+    updatedAt: z.number()
+});
+
+const LFGParticipantSchema = z.object({
+    discordId: z.string(),
+    bungieId: z.string().optional()
+});
+
+export const LFGWithUsersSchema = LFGSchema.extend({
+    joinedMembers: z.array(LFGParticipantSchema),
+    alteredMembers: z.array(LFGParticipantSchema)
 });
 
 export const LFGListSchema = z.array(LFGSchema);
+
+export const LFGWithUserListSchema = z.array(LFGWithUsersSchema);
 
 export class LFGNotExistError extends Error {
     constructor(id: number) {

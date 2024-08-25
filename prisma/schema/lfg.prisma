@@ -1,16 +1,16 @@
 model LFG {
-    id            Int                @id @default(autoincrement())
-    guildId       BigInt
-    description   String
-    lfgActivityId Int
-    activity      LFGActivity        @relation(fields: [lfgActivityId], references: [id])
-    joinedMember  LFGJoinedMember[]
-    alteredMember LFGAlteredMember[]
-    when          DateTime           @db.Timestamp()
-    creatorId     BigInt
-    creator       User               @relation(fields: [creatorId], references: [id])
-    createdAt     DateTime           @default(now()) @db.Timestamp()
-    updatedAt     DateTime           @default(now()) @updatedAt @db.Timestamp()
+    id             Int                @id @default(autoincrement())
+    guildId        BigInt
+    description    String
+    lfgActivityId  Int
+    activity       LFGActivity        @relation(fields: [lfgActivityId], references: [id])
+    joinedMembers  LFGJoinedMember[]
+    alteredMembers LFGAlteredMember[]
+    when           DateTime           @db.Timestamp()
+    creatorId      BigInt
+    creator        User               @relation(fields: [creatorId], references: [id])
+    createdAt      DateTime           @default(now()) @db.Timestamp()
+    updatedAt      DateTime           @default(now()) @updatedAt @db.Timestamp()
 }
 
 model LFGActivity {
@@ -20,21 +20,27 @@ model LFGActivity {
     parentId    Int?
     parent      LFGActivity?  @relation("categorized", fields: [parentId], references: [id])
     children    LFGActivity[] @relation("categorized")
-    lfg         LFG[]
+    lfgs        LFG[]
 }
 
 model LFGJoinedMember {
-    id     Int    @id @default(autoincrement())
-    lfgId  Int
-    lfg    LFG    @relation(fields: [lfgId], references: [id])
-    userId BigInt
-    user   User   @relation(fields: [userId], references: [id])
+    id        Int      @id @default(autoincrement())
+    lfgId     Int
+    lfg       LFG      @relation(fields: [lfgId], references: [id])
+    userId    BigInt
+    user      User     @relation(fields: [userId], references: [id])
+    createdAt DateTime @default(now()) @db.Timestamp()
+
+    @@unique([lfgId, userId])
 }
 
 model LFGAlteredMember {
-    id     Int    @id @default(autoincrement())
-    lfgId  Int
-    lfg    LFG    @relation(fields: [lfgId], references: [id])
-    userId BigInt
-    User   User   @relation(fields: [userId], references: [id])
+    id        Int      @id @default(autoincrement())
+    lfgId     Int
+    lfg       LFG      @relation(fields: [lfgId], references: [id])
+    userId    BigInt
+    user      User     @relation(fields: [userId], references: [id])
+    createdAt DateTime @default(now()) @db.Timestamp()
+
+    @@unique([lfgId, userId])
 }
