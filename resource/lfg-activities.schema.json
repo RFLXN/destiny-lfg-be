@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "LFG Activity Schema",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/LFGActivity"
+  },
+  "$defs": {
+    "LocaleMap": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "de": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "en-GB": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "en-US": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "es-ES": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "es-419": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fr": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hr": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "it": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "no": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pt-BR": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ro": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sv-SE": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tr": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cs": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "el": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bg": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ru": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uk": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "th": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zh-CN": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ja": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zh-TW": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ko": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "LFGActivity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": [
+            "null",
+            "number"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "nameLocales": {
+          "$ref": "#/$defs/LocaleMap"
+        },
+        "descriptionLocales": {
+          "$ref": "#/$defs/LocaleMap"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/LFGActivity"
+          }
+        },
+        "maxJoinedMembers": {
+          "type": [
+            "null",
+            "number"
+          ]
+        }
+      }
+    }
+  }
+}
