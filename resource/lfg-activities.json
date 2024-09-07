@@ -1,0 +1,614 @@
+[
+  {
+    "id": 100,
+    "name": "Raid",
+    "description": "6-player endgame co-op activity.",
+    "nameLocale": {
+      "ko": "레이드",
+      "ja": "レイド"
+    },
+    "descriptionLocale": {
+        "ko": "6인 협동 엔드게임 활동.",
+        "ja": "6人協力エンドゲームアクティビティ。"
+    },
+    "maxJoinedMembers": 6,
+    "children": [
+      {
+        "id": 101,
+        "name": "Last Wish",
+        "description": "Forsaken / Dreaming City",
+        "nameLocale": {
+          "ko": "마지막 소원",
+          "ja": "最後の望み"
+        },
+        "descriptionLocale": {
+          "ko": "포세이큰 (Forsaken) / 꿈의 도시",
+          "ja": "孤独と影 (Forsaken) / 夢見る都市"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 102,
+        "name": "Garden of Salvation",
+        "description": "Shadowkeep / Moon",
+        "nameLocale": {
+          "ko": "구원의 정원",
+          "ja": "済の庭園"
+        },
+        "descriptionLocale": {
+          "ko": "섀도우킵 (Shadowkeep) / 달",
+          "ja": "影の砦 (Shadowkeep) / 月"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 103,
+        "name": "Deep Stone Crypt",
+        "description": "Beyond Light / Europa",
+        "nameLocale": {
+          "ko": "딥스톤 무덥",
+          "ja": "ィープストーン・クリプト"
+        },
+        "descriptionLocale": {
+          "ko": "빛의 저편 (Beyond Light) / 유로파",
+          "ja": "光の超越 (Beyond Light) / エウロパ"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 104,
+        "name": "Vault of Glass",
+        "description": "Season of the Splicer (Beyond Light) / Legends (Venus)",
+        "nameLocale": {
+          "ko": "유리 금고",
+          "ja": "ガラスの間"
+        },
+        "descriptionLocale": {
+          "ko": "융합의 시즌 (빛의 저편) / 전설 (금성)",
+          "ja": "永夜のシーズン (光の超越) / 伝説 (金星)"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 105,
+        "name": "Vow of the Disciple",
+        "description": "The Witch Queen / Savathûn's Throne World",
+        "nameLocale": {
+          "ko": "신봉자의 서약",
+          "ja": "門弟の誓い"
+        },
+        "descriptionLocale": {
+          "ko": "마녀 여왕 (The Witch Queen) / 사바툰의 왕좌 세계",
+          "ja": "漆黒の女王 (The Witch Queen) / サバスンの玉座の世界"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 106,
+        "name": "King's Fall",
+        "description": "Season of Plunder (The Witch Queen) / Legends (Dreadnaught)",
+        "nameLocale": {
+          "ko": "왕의 몰락",
+          "ja": "邪神、滅びる"
+        },
+        "descriptionLocale": {
+          "ko": "우주 해적 시즌 (마녀 여왕) / 전설 (드레드노트)",
+          "ja": "宙賊のシーズン (漆黒の女王) / 伝説 (ドレッドノート)"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 107,
+        "name": "Root of Nightmares",
+        "description": "Lightfall / Neptune",
+        "nameLocale": {
+          "ko": "악몽의 뿌리",
+          "ja": "ナイトメアの根源"
+        },
+        "descriptionLocale": {
+          "ko": "빛의 추락 (Lightfall) / 해왕성",
+          "ja": "光の終焉 (Lightfall) / 海王星"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 108,
+        "name": "Crota's End",
+        "description": "Season of the Witch (Lightfall) / Legends (Moon)",
+        "nameLocale": {
+          "ko": "크로타의 최후",
+          "ja": "クロタの最期"
+        },
+        "descriptionLocale": {
+          "ko": "마녀의 시즌 (빛의 추락) / 전설 (달)",
+          "ja": "魔術のシーズン (光の終焉) / 伝説 (月)"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 109,
+        "name": "Edge of Salvation",
+        "description": "The Final Shape / The Pale Heart",
+        "nameLocale": {
+          "ko": "구원의 경계",
+          "ja": "救済の境界"
+        },
+        "descriptionLocale": {
+          "ko": "최후의 형체 / 창백한 심장",
+          "ja": "最終形態 / ペイルハート"
+        },
+        "maxJoinedMembers": 6
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Dungeon",
+    "description": "3-player endgame co-op activity.",
+    "nameLocale": {
+      "ko": "던전",
+      "ja": "迷宮 (ダンジョン)"
+    },
+    "descriptionLocale": {
+      "ko": "3인 협동 엔드게임 활동.",
+      "ja": "3人協力エンドゲームアクティビティ。"
+    },
+    "maxJoinedMembers": 3,
+    "children": [
+      {
+        "id": 201,
+        "name": "The Shattered Throne",
+        "description": "Forsaken / Dreaming City",
+        "nameLocale": {
+          "ko": "조각난 왕관",
+          "ja": "砕かれた玉座"
+        },
+        "descriptionLocale": {
+          "ko": "포세이큰 (Forsaken) / 꿈의 도시",
+          "ja": "孤独と影 (Forsaken) / 夢見る都市"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 202,
+        "name": "Pit of Heresy",
+        "description": "Shadowkeep / Moon",
+        "nameLocale": {
+          "ko": "이단의 구덩이",
+          "ja": "異端の奈落"
+        },
+        "descriptionLocale": {
+          "ko": "섀도우킵 (Shadowkeep) / 달",
+          "ja": "影の砦 (Shadowkeep) / 月"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 203,
+        "name": "Prophecy",
+        "description": "Season of Arrivals (Shadowkeep) / Legends (Nine Realms)",
+        "nameLocale": {
+          "ko": "예언",
+          "ja": "予言"
+        },
+        "descriptionLocale": {
+          "ko": "출현의 시즌 (섀도우킵) / 전설 (아홉의 차원)",
+          "ja": "到来のシーズン (影の砦) / 伝説 (謎の空間)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 204,
+        "name": "Grasp of Avarice",
+        "description": "Bungie 30th Anniversary Pack / Eternity",
+        "nameLocale": {
+          "ko": "탐욕의 손아귀",
+          "ja": "強欲の支配"
+        },
+        "descriptionLocale": {
+          "ko": "번지 30주년 기념팩 / 영원",
+          "ja": "Bungie 30周年記念パック / 永遠の空間"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 205,
+        "name": "Duality",
+        "description": "Season of the Haunted (Witch Queen) / Moon (Derelict Leviathan)",
+        "nameLocale": {
+          "ko": "이중성",
+          "ja": "デュアリティ"
+        },
+        "descriptionLocale": {
+          "ko": "망령의 시즌 / 달 (버려진 리바이어던)",
+          "ja": "幻影のシーズン / 月 (遺棄船リヴァイアサン)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 206,
+        "name": "Spire of the Watcher",
+        "description": "Season of the Seraph (Witch Queen) / Legends (Mars)",
+        "nameLocale": {
+          "ko": "감시자의 첨탑",
+          "ja": "監視者のスパイア"
+        },
+        "descriptionLocale": {
+          "ko": "세라프의 시즌 (마녀 여왕) / 전설 (화성)",
+          "ja": "熾天使のシーズン (漆黒の女王) / 伝説 (火星)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 207,
+        "name": "Ghosts of the Deep",
+        "description": "Season of the Deep (Lightfall) / Legends (Titan)",
+        "nameLocale": {
+          "ko": "심해의 유령",
+          "ja": "深淵の亡霊"
+        },
+        "descriptionLocale": {
+          "ko": "심해의 시즌 (빛의 추락) / 전설 (타이탄)",
+          "ja": "深淵のシーズン (光の終焉) / 伝説 (タイタン)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 208,
+        "name": "Warlord's Ruin",
+        "description": "Season of the Wish (Lightfall) / EDZ",
+        "nameLocale": {
+          "ko": "전쟁군주의 폐허",
+          "ja": "ウォーロードの旧跡"
+        },
+        "descriptionLocale": {
+          "ko": "소원의 시즌 (빛의 추락) / EDZ",
+          "ja": "望みのシーズン (光の終焉) / EDZ"
+        },
+        "maxJoinedMembers": 3
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Exotic Mission",
+    "description": "Unique missions for exotic items.",
+    "nameLocale": {
+      "ko": "경이 임무",
+      "ja": "エキゾチックミッション"
+    },
+    "descriptionLocale": {
+      "ko": "경이 아이템을 위한 활동",
+      "ja": "エキゾチックアイテムのための活動"
+    },
+    "maxJoinedMembers": 3,
+    "children": [
+      {
+        "id": 301,
+        "name": "The Whisper",
+        "description": "Solar Power Sniper: Whisper of the Worm / Legends (Io)",
+        "nameLocale": {
+          "ko": "속삭임",
+          "ja": "ささやき"
+        },
+        "descriptionLocale": {
+          "ko": "태양 중화기 저격총: 벌레의 속삭임 / 전설 (이오)",
+          "ja": "ソーラー・パワー・スナイパーライフル: 虫の囁き / 伝説 (イオ)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 302,
+        "name": "Zero Hour",
+        "description": "Kinetic Pulse Rifle: Outbreak Perfected / Legends (Old Tower)",
+        "nameLocale": {
+          "ko": "개시 시간",
+          "ja": "ゼロ時間"
+        },
+        "descriptionLocale": {
+          "ko": "물리 파동소총: 완벽한 폭동 / 전설 (옛 탑의 폐허)",
+          "ja": "キネティック・パルスライフル: パーフェクト・アウトブレイク / 伝説 (旧タワー)"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 303,
+        "name": "Dual Destiny",
+        "description": "Exotic Class Armor: Stoicism (Titan), Relativism (Hunter), Solipsism (Warlock) / The Pale Heart",
+        "nameLocale": {
+          "ko": "두 개의 운명",
+          "ja": "二人の運命"
+        },
+        "descriptionLocale": {
+          "ko": "경이 직업 방어구: 극기심 (타이탄), 상대주의 (헌터), 유아론 (워록) / 창백한 심장",
+          "ja": "エキゾチック・クラス・アーマー: ストイシズム (タイタン), 相対主義 (ハンター), 独我論 (ウォーロック) / ペイルハート"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 304,
+        "name": "Encore",
+        "description": "Void Special Auto Rifle: Choir of One / H.E.L.M.",
+        "nameLocale": {
+          "ko": "앙코르",
+          "ja": "アンコール"
+        },
+        "descriptionLocale": {
+          "ko": "공허 특수 자동소총: 하나의 합창단 / 헬름",
+          "ja": "ボイド・特殊・オートライフル: コーラス・オブ・ワン / H.E.L.M."
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 350,
+        "name": "Rotate Exotic Mission",
+        "description": "Weekly rotating exotic missions.",
+        "nameLocale": {
+          "ko": "순환 (로테이션) 경이 임무",
+          "ja": "ローテーションエキゾチックミッション"
+        },
+        "descriptionLocale": {
+            "ko": "주간 로테이션 경이 임무",
+            "ja": "週間ローテーションエキゾチックミッション"
+        },
+        "maxJoinedMembers": 3,
+        "children": [
+          {
+            "id": 351,
+            "name": "Presage",
+            "description": "Kinetic Scout Rifle: Dead Man's Tale / Legends (The Glykon)",
+            "nameLocale": {
+              "ko": "예지",
+              "ja": "予感"
+            },
+            "descriptionLocale": {
+              "ko": "물리 정찰 소총: 망자의 이야기 / 전설 (글라이콘)",
+              "ja": "キネティック・スカウトライフル: デッドマンズテイル / 伝説 (グリコン)"
+            },
+            "maxJoinedMembers": 3
+          },
+          {
+            "id": 352,
+            "name": "Vox Obscura",
+            "description": "Void Special Grenade Launcher: Dead Messenger / Savathûn's Throne World",
+            "nameLocale": {
+              "ko": "어슴푸레한 목소리",
+              "ja": "ヴォクス・オブスキュラ"
+            },
+            "descriptionLocale": {
+              "ko": "공허 특수 유탄 발사기: 사망한 전령 / 사바툰의 왕좌 세계",
+              "ja": "ボイド・特殊・グレネードランチャー: デッドメッセンジャー / サバスンの玉座の世界"
+            },
+            "maxJoinedMembers": 3
+          },
+          {
+            "id": 353,
+            "name": "Operation: Seraph's Shield",
+            "description": "Kinetic Pulse Rifle: Revision Zero / Legends (Earth)",
+            "nameLocale": {
+              "ko": "작전: 세라프의 방어",
+              "ja": "熾天使の盾作戦"
+            },
+            "descriptionLocale": {
+              "ko": "물리 파동소총: 영점 보정 / 전설 (지구)",
+              "ja": "キネティック・パルスライフル: リビジョン・ゼロ / 伝説 (地球)"
+            },
+            "maxJoinedMembers": 3
+          },
+          {
+            "id": 354,
+            "name": "//NODE.OVRD.AVALON//",
+            "description": "Void Special Glaive: Vexcalibur / Legends (Vex Network)",
+            "nameLocale": {
+              "ko": "//노드.오버라이드.아발론//",
+              "ja": "//NODE.OVRD.AVALON//"
+            },
+            "descriptionLocale": {
+              "ko": "공허 특수 월도: 벡스칼리버 / 전설 (벡스 네트워크)",
+              "ja": "ボイド・特殊・グレイブ: ベックスカリバー / 伝説 (ベックスネットワーク)"
+            },
+            "maxJoinedMembers": 3
+          },
+          {
+            "id": 355,
+            "name": "Starcrossed",
+            "description": "Strand Bow: Wish-Keeper / Legends (Black Garden)",
+            "nameLocale": {
+              "ko": "비운",
+              "ja": "不運"
+            },
+            "descriptionLocale": {
+              "ko": "초월 활: 소원 파수꾼 / 전설 (검은 정원)",
+              "ja": "ストランド・弓: 願いの守り手 / 伝説 (ブラックガーデン)"
+            },
+            "maxJoinedMembers": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Vanguard Activity",
+    "description": "Activity in the Vanguard playlist.",
+    "nameLocale": {
+      "ko": "선봉대 활동",
+      "ja": "バンガード作戦"
+    },
+    "descriptionLocale": {
+      "ko": "선봉대 플레이리스트의 활동",
+      "ja": "バンガードプレイリストの活動"
+    },
+    "maxJoinedMembers": 3,
+    "children": [
+      {
+        "id": 401,
+        "name": "Strike",
+        "description": "(Maybe) Easy 3-player co-op activity.",
+        "nameLocale": {
+          "ko": "공격전",
+          "ja": "ストライク"
+        },
+        "descriptionLocale": {
+            "ko": "(아마도) 쉬운 3인 협동 활동.",
+            "ja": "(たぶん) 簡単な3人協力活動。"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 402,
+        "name": "Nightfall",
+        "description": "Hard 3-player co-op activity.",
+        "nameLocale": {
+          "ko": "황혼전",
+          "ja": "ナイトフォール"
+        },
+        "descriptionLocale": {
+          "ko": "어려운 3인 협동 활동.",
+          "ja": "難しい3人協力活動。"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 403,
+        "name": "Nightfall: Grandmaster",
+        "description": "Challenging 3-player co-op activity.",
+        "nameLocale": {
+          "ko": "황혼전: 그랜드마스터",
+          "ja": "ナイトフォール: グランドマスター"
+        },
+        "descriptionLocale": {
+          "ko": "도전적인 3인 협동 활동.",
+          "ja": "挑戦的な3人協力活動。"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 404,
+        "name": "Onslaught",
+        "description": "Wave-based 3-player co-op defense activity.",
+        "nameLocale": {
+          "ko": "맹공격",
+          "ja": "猛襲"
+        },
+        "descriptionLocale": {
+          "ko": "웨이브 기반 3인 협동 디펜스 활동",
+          "ja": "３人協力のディフェンス活動"
+        },
+        "maxJoinedMembers": 3
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "name": "Crucible",
+    "description": "PvP activity.",
+    "nameLocale": {
+      "ko": "시련의 장",
+      "ja": "クルーシブル"
+    },
+    "descriptionLocale": {
+      "ko": "PvP 기반 활동",
+      "ja": "PvP活動"
+    },
+    "children": [
+      {
+        "id": 501,
+        "name": "Quickplay",
+        "description": "Casual PvP activity.",
+        "nameLocale": {
+          "ko": "빠른 전투",
+          "ja": "クイックプレイ"
+        },
+        "descriptionLocale": {
+          "ko": "캐주얼한 PvP 활동",
+          "ja": "カジュアル PvP 活動"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 502,
+        "name": "Competitive",
+        "description": "Ranked 3v3 PvP activity.",
+        "nameLocale": {
+          "ko": "경쟁전",
+          "ja": "ランク戦"
+        },
+        "descriptionLocale": {
+          "ko": "랭크 3대3 PvP 활동",
+          "ja": "ランク 3v3 PvP 活動"
+        },
+        "maxJoinedMembers": 3
+      },
+      {
+        "id": 503,
+        "name": "Iron Banner",
+        "description": "Seasonal PvP activity.",
+        "nameLocale": {
+          "ko": "강철 깃발",
+          "ja": "アイアンバナー"
+        },
+        "descriptionLocale": {
+          "ko": "시즌별 PvP 활동",
+          "ja": "シーズナル　PvP　活動"
+        },
+        "maxJoinedMembers": 6
+      },
+      {
+        "id": 504,
+        "name": "Trials of Osiris",
+        "description": "Weekly 3v3 PvP activity.",
+        "nameLocale": {
+          "ko": "오시리스의 시험",
+          "ja": "オシリスの試練"
+        },
+        "descriptionLocale": {
+            "ko": "주간 3대3 PvP 활동",
+            "ja": "週間 3v3 PvP 活動"
+        },
+        "maxJoinedMembers": 3
+      }
+    ]
+  },
+  {
+    "id": 600,
+    "name": "Gambit",
+    "description": "PvEvP activity.",
+    "nameLocale": {
+      "ko": "갬빗",
+      "ja": "ギャンビット"
+    },
+    "descriptionLocale": {
+      "ko": "PvEvP 기반 활동",
+      "ja": "PvEvP 活動"
+    },
+    "maxJoinedMembers": 3
+  },
+  {
+    "id": 700,
+    "name": "Seasonal Activity",
+    "description": "Activity based on season content.",
+    "nameLocale": {
+      "ko": "시즌 활동",
+      "ja": "シーズナルアクティビティ"
+    },
+    "descriptionLocale": {
+      "ko": "시즌 컨텐츠 활동",
+      "ja": "シーズンコンテンツアクティビティ"
+    },
+    "maxJoinedMembers": 3
+  },
+  {
+    "id": 1000,
+    "name": "Others",
+    "description": "Other any activities.",
+    "nameLocale": {
+      "ko": "기타",
+      "ja": "その他"
+    },
+    "descriptionLocale": {
+      "ko": "기타 활동",
+      "ja": "その他の活動"
+    }
+  }
+]

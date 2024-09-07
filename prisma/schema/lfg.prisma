@@ -3,7 +3,7 @@ model LFG {
     guildId        BigInt
     description    String
     lfgActivityId  Int
-    activity       LFGActivity        @relation(fields: [lfgActivityId], references: [id])
+    activity       LFGActivity        @relation(fields: [lfgActivityId], references: [id], onDelete: NoAction)
     joinedMembers  LFGJoinedMember[]
     alteredMembers LFGAlteredMember[]
     when           DateTime           @db.Timestamp()
@@ -14,13 +14,16 @@ model LFG {
 }
 
 model LFGActivity {
-    id          Int           @id @default(autoincrement())
-    name        String
-    description String
-    parentId    Int?
-    parent      LFGActivity?  @relation("categorized", fields: [parentId], references: [id])
-    children    LFGActivity[] @relation("categorized")
-    lfgs        LFG[]
+    id                Int           @id @default(autoincrement())
+    name              String
+    nameLocale        Json?
+    description       String
+    descriptionLocale Json?
+    maxJoinedMembers  Int           @default(0)
+    parentId          Int?
+    parent            LFGActivity?  @relation("categorized", fields: [parentId], references: [id])
+    children          LFGActivity[] @relation("categorized")
+    lfgs              LFG[]
 }
 
 model LFGJoinedMember {
